@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ContactEdit">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_remise_zero"
+        android:orderInCategory="100"
+        android:title="@string/remise_zero"
+        app:showAsAction="never"
+        android:onClick="remiseZero"
+        />
+    <item
+        android:id="@+id/action_add_phone_number"
+        android:orderInCategory="100"
+        android:title="@string/add_phone_number"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/looking_city"
+        android:orderInCategory="100"
+        android:title="@string/looking_city"
+        app:showAsAction="never"
+        />
+
+</menu>

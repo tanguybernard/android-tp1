@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="departments">
+        <item>Ille et Vilaine</item>
+        <item>Finistere</item>
+        <item>Mayenne</item>
+        <item>Orne</item>
+        <item>Manche</item>
+    </string-array>
+</resources>
