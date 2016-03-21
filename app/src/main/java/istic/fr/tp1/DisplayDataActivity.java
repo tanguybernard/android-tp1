@@ -40,12 +40,11 @@ public class DisplayDataActivity extends Activity implements
         add.setOnClickListener(new OnClickListener() {
 
             public void onClick(View v) {
-                // starts a new Intent to add a Country
-                Intent countryEdit = new Intent(getBaseContext(), ContactEdit.class);
+                Intent contactEdit = new Intent(getBaseContext(), ContactEdit.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("mode", "add");
-                countryEdit.putExtras(bundle);
-                startActivity(countryEdit);
+                contactEdit.putExtras(bundle);
+                startActivity(contactEdit);
             }
         });
 
@@ -102,35 +101,7 @@ public class DisplayDataActivity extends Activity implements
         //Ensures a loader is initialized and active.
         getLoaderManager().initLoader(0, null, this);
 
-/*
-        listView.setOnItemClickListener(new OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> listView, View view,
-                                    int position, long id) {
-                // Get the cursor, positioned to the corresponding row in the result set
-                Cursor cursor = (Cursor) listView.getItemAtPosition(position);
 
-                // display the selected country
-                String countryCode =
-                        cursor.getString(cursor.getColumnIndexOrThrow(ContactsDb.CONTACT_NAME));
-                Toast.makeText(getApplicationContext(),
-                        countryCode, Toast.LENGTH_SHORT).show();
-
-                String rowId =
-                        cursor.getString(cursor.getColumnIndexOrThrow(ContactsDb._ID));
-
-                // starts a new Intent to update/delete a Country
-                // pass in row Id to create the Content URI for a single row
-                Intent countryEdit = new Intent(getBaseContext(), ContactEdit.class);
-                Bundle bundle = new Bundle();
-                bundle.putString("mode", "update");
-                bundle.putString("rowId", rowId);
-                countryEdit.putExtras(bundle);
-                startActivity(countryEdit);
-
-            }
-        });
-*/
     }
 
     // This is called when a new Loader needs to be created.

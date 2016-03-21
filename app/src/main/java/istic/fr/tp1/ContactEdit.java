@@ -47,7 +47,7 @@ public class ContactEdit extends Activity{
         city = (EditText) findViewById(R.id.edit_city);
 
         Bundle bundle = this.getIntent().getExtras();
-        loadCountryInfo();
+        loadCOntactInfo();
 
 
     }
@@ -96,8 +96,7 @@ public class ContactEdit extends Activity{
 
 
     // based on the rowId get all information from the Content Provider
-    // about that country
-    private void loadCountryInfo(){
+    private void loadCOntactInfo(){
 
         String[] projection = {
                 ContactsDb._ID,
