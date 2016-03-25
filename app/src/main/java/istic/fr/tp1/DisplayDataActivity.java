@@ -40,6 +40,21 @@ public class DisplayDataActivity extends Activity implements
         add.setOnClickListener(new OnClickListener() {
 
             public void onClick(View v) {
+
+                /*
+                    PRECEDEMENT DANS LE TP1
+
+                    User user = new User("Tanguy", "BERNARD", "12/10/93", "Rennes");
+                    Intent intent = new Intent(getBaseContext(), ContactEdit.class);
+                    intent.putExtra("user", user);
+                    startActivity(intent);
+
+
+
+                 */
+
+
+
                 Intent contactEdit = new Intent(getBaseContext(), ContactEdit.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("mode", "add");
